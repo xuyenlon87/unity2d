@@ -649,6 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5381313d91cf54542ba77d3be9420267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapCost: 0
 --- !u!1 &7797739907068695911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,12 +1261,12 @@ GameObject:
   - component: {fileID: 7797739908177965259}
   - component: {fileID: 7797739908177965256}
   m_Layer: 5
-  m_Name: gameOver
+  m_Name: gameOverScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7797739908177965261
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1780,6 +1781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5381313d91cf54542ba77d3be9420267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapCost: 0
 --- !u!1001 &6986621889277213787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2286,6 +2288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5381313d91cf54542ba77d3be9420267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapCost: 0
 --- !u!1 &4246384152392950251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6258047187591320376, guid: 3f837f92363aa2d449046f811b2e24ec, type: 3}
@@ -2303,3 +2306,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5381313d91cf54542ba77d3be9420267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapCost: 0

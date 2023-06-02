@@ -15,7 +15,6 @@ public class Score : MonoBehaviour
     public GameObject offGameControl;
     public static int scoreTotal = 0;
     public static int scoreTotalCrown = 0;
-    //public Text ScoreTotal;
     public bool dkWin;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,7 +31,6 @@ public class Score : MonoBehaviour
             Destroy(collision.gameObject);
 
             crownAfter.SetActive(true);
-            scoreTotalCrown += scoreCrown;
         }
         else if (collision.gameObject.CompareTag("flag"))
         {
@@ -46,20 +44,39 @@ public class Score : MonoBehaviour
                 //ScoreTotal.text = scoreTotal.ToString();
                 dkWin = true;
                 scoreTotal += score;
-
+                scoreTotalCrown += scoreCrown;
             }
         }
         
 
     }
     
-    
- 
+    private void setScoreStar()
+    {
+        PlayerPrefs.SetInt("scoreStarSave", scoreTotal);
+    }
+
+    private void setScoreCrown()
+    {
+        PlayerPrefs.SetInt("scoreCrownSave", scoreTotalCrown);
+    }
+
+    private void getScoreStar()
+    {
+        scoreTotal = PlayerPrefs.GetInt("scoreStarSave");
+    }
+
+    private void getScoreCrown()
+    {
+        scoreTotalCrown = PlayerPrefs.GetInt("scoreCrownSave");
+    }
     // Start is called before the first frame update
     void Start()
     {
         starCoinScore = GameObject.Find("starCoinScore").GetComponent<Text>();
         dkWin = false;
+        getScoreStar();
+        getScoreCrown();
 
     }
 
@@ -71,7 +88,7 @@ public class Score : MonoBehaviour
             finishMapScreen.SetActive(true);
             flagOn.SetActive(true);
             flag.SetActive(false);
-            //ScoreTotal.text = scoreTotal.ToString();
+
         }
     }
 }
