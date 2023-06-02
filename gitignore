@@ -1,0 +1,30 @@
+# Visual Studio files
+*.suo
+*.user
+*.sln.docstates
+*.vs/
+*.psess
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders to ignore
+*.bak
+*.cache
+*.log
+*.log.*
+*.tmp
+*.dbmdl
+[Tt]humbs.db
+[Tt]est[Rr]esult*
+*.resharper*
+*.userprefs
+packages/
+node_modules/
+
