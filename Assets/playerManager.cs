@@ -11,7 +11,6 @@ public class playerManager : MonoBehaviour
     public GameObject finishMapScreen;
     public static bool finishMap;
     public GameObject GameControl;
-    private string currentMap;
     // Start is called before the first frame update
 
     void Start()
@@ -20,9 +19,6 @@ public class playerManager : MonoBehaviour
         gamePauseScreen.SetActive(false);
         finishMapScreen.SetActive(false);
         finishMap = false;
-        currentMap = SceneManager.GetActiveScene().name;
-
-
     }
 
     // Update is called once per frame
@@ -34,12 +30,7 @@ public class playerManager : MonoBehaviour
         }
         
     }
-    public void replay()
-    {
-        SceneManager.LoadScene(currentMap);
-        Debug.Log("replay");
-        
-    }
+
     public void buttonPlayFinish()
     {
         SceneManager.LoadScene("homeScreen");
@@ -52,6 +43,7 @@ public class playerManager : MonoBehaviour
     public void GamePause()
     {
         gamePauseScreen.SetActive(true);
+        AudioManager.instance.Play("Click");
     }
 
     public void buttonX()

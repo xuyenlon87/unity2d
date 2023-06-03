@@ -31,6 +31,7 @@ public class buttonOpenGameScreen : MonoBehaviour
     public void OnPlay()
     {
         SceneManager.LoadScene("homeScreen");
+        AudioManager.instance.Play("Click");
     }
     // Update is called once per frame
     void Update()

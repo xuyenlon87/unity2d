@@ -24,6 +24,7 @@ public class Score : MonoBehaviour
             starCoinScore.text = score.ToString() + "/3";
             //StarCoinScore.IncreaseScore(3);
             Destroy(collision.gameObject);
+            AudioManager.instance.Play("Coin");
         }
         else if (collision.gameObject.CompareTag("crownCoin"))
         {
@@ -45,6 +46,7 @@ public class Score : MonoBehaviour
                 dkWin = true;
                 scoreTotal += score;
                 scoreTotalCrown += scoreCrown;
+                AudioManager.instance.Play("FinishMap");
             }
         }
         
@@ -77,7 +79,6 @@ public class Score : MonoBehaviour
         dkWin = false;
         getScoreStar();
         getScoreCrown();
-
     }
 
     // Update is called once per frame

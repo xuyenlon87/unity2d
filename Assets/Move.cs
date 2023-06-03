@@ -59,6 +59,7 @@ public class Move : MonoBehaviour
     public void onJump()
     {
         jump = true;
+        AudioManager.instance.Play("Jump");
     }
 
     public void offJump()
@@ -84,13 +85,14 @@ public class Move : MonoBehaviour
         else if (collision.gameObject.CompareTag("stairUpnDown"))
         {
             dkJump = true;
+            transform.parent = collision.transform;
         }
         else if (collision.gameObject.CompareTag("trap"))
         {
             playerManager.gameOver = true;
-            Debug.Log("die");
             gameObject.SetActive(false);
-        }
+            AudioManager.instance.Play("GameOver");
+        }          
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -98,6 +100,10 @@ public class Move : MonoBehaviour
         if (collision.gameObject.CompareTag("box"))
         {
             dkPush = false;
+        }
+        else if (collision.gameObject.CompareTag("stairUpnDown"))
+        {
+            transform.parent = null;
         }
     }
 
@@ -221,16 +227,6 @@ public class Move : MonoBehaviour
                     SetAcivePushAnimation(false);
             }
         }
-        //else if (dkJump)
-        //{
-        //    if (jump)
-        //    {
-        //        dkJump = false;
-        //        rb.velocity = new Vector2(rb.velocity.x, speed + 2);
-        //        SetActiveJumpAnimation(true);
-        //    }
-        //}
-
             else if (upAndDown)
             {
                 if (moveDown)
