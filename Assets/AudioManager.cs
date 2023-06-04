@@ -8,7 +8,8 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
     public Sounds[] sounds;
-    private bool isSoundEnabled;
+    public bool isSoundEnabled;
+    public GameObject SoundOff;
     private void Awake()
     {
         if (instance != null)
@@ -21,16 +22,21 @@ public class AudioManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        // Kiểm tra và khôi phục trạng thái âm thanh từ PlayerPrefs
+        isSoundEnabled = PlayerPrefs.GetInt("SoundEnabled", 1) == 1;
         foreach (Sounds s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.audioClip;
-            s.source.volume = isSoundEnabled ? s.volume : 0f; ;
+            s.source.volume = isSoundEnabled ? s.volume : 0f;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
-        // Kiểm tra và khôi phục trạng thái âm thanh từ PlayerPrefs
-        isSoundEnabled = PlayerPrefs.GetInt("SoundEnabled", 1) == 1;
+        if (SoundOff != null)
+        {
+            SoundOff.SetActive(!isSoundEnabled);
+        }
+
     }
 
     public void Play(string sound)
@@ -57,6 +63,11 @@ public class AudioManager : MonoBehaviour
         foreach (Sounds s in sounds)
         {
             s.source.volume = isSoundEnabled ? s.volume : 0f; // Đặt âm lượng phù hợp với trạng thái âm thanh
+        }
+
+        if (SoundOff != null)
+        {
+            SoundOff.SetActive(!isSoundEnabled);
         }
     }
 }

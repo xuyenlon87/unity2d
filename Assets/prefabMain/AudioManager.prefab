@@ -80,3 +80,5 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  isSoundEnabled: 0
+  SoundOff: {fileID: 0}
