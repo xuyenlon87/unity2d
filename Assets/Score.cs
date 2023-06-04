@@ -56,11 +56,13 @@ public class Score : MonoBehaviour
     private void setScoreStar()
     {
         PlayerPrefs.SetInt("scoreStarSave", scoreTotal);
+        PlayerPrefs.Save();
     }
 
     private void setScoreCrown()
     {
         PlayerPrefs.SetInt("scoreCrownSave", scoreTotalCrown);
+        PlayerPrefs.Save();
     }
 
     private void getScoreStar()
