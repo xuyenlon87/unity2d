@@ -12,12 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/homeScreen.unity
     guid: 3bd3dc6305a98a740a613e9053dbbbb8
   - enabled: 1
+    path: Assets/Scenes/map1.unity
+    guid: 3a7b205bf2f4e584a8fdfd0b3d9be42d
+  - enabled: 1
+    path: Assets/Scenes/map2.unity
+    guid: 00823b6ffe6ad1f469a54f9fc6e26998
+  - enabled: 0
     path: Assets/Scenes/map1xx.unity
     guid: 5e3e281c6f8464347866e2fbe7bb7a1a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/store.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/map2xx.unity
     guid: 13f5a90a787367445bec25a5b5d18571
   m_configObjects: {}
