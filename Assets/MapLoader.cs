@@ -28,9 +28,16 @@ public class MapLoader:MonoBehaviour
 
     public void mapNext(int currentMap)
     {
-        
-        currentMap++;
-        SceneManager.LoadScene("map" + currentMap.ToString());
+        if (unLock)
+        {
+            currentMap++;
+            SceneManager.LoadScene("map" + currentMap.ToString());
+        }
+        else
+        {
+            SceneManager.LoadScene("homeScreen");
+        }
+
     }
     private void Start()
     {
