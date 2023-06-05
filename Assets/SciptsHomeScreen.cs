@@ -5,11 +5,18 @@ using UnityEngine.UI;
 
 public class SciptsHomeScreen : MonoBehaviour
 {
-    public int scoreTotal;
+    public static  int scoreTotal;
+    public Score ScoreSave;
     public static int scoreTotalCrown;
     public Text TextScore;
     public Text TextScoreCrown;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        Score.getScoreCrown();
+        Score.getScoreStar();
+
+    }
     void Start()
     {
         scoreTotal = Score.scoreTotal;

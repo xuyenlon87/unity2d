@@ -105,6 +105,7 @@ public class Move : MonoBehaviour
         {
             transform.parent = null;
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

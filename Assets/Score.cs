@@ -47,6 +47,8 @@ public class Score : MonoBehaviour
                 scoreTotal += score;
                 scoreTotalCrown += scoreCrown;
                 AudioManager.instance.Play("FinishMap");
+                setScoreStar();
+                setScoreCrown();
             }
         }
         
@@ -65,12 +67,12 @@ public class Score : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    private void getScoreStar()
+    public static void getScoreStar()
     {
         scoreTotal = PlayerPrefs.GetInt("scoreStarSave");
     }
 
-    private void getScoreCrown()
+    public static void getScoreCrown()
     {
         scoreTotalCrown = PlayerPrefs.GetInt("scoreCrownSave");
     }
