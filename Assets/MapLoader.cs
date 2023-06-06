@@ -15,23 +15,23 @@ public class MapLoader:MonoBehaviour
                 GameObject.Find("ButtonUnlock" + map).SetActive(false);
             }
     }
-    public void OnMapClick(int map)
+    public void OnMapClick()
     {
         SceneManager.LoadScene($"Map{map}");
 
     }
 
-    public void ReplayMap(int mapReplay)
+    public void ReplayMap()
     {
-        SceneManager.LoadScene("map" + mapReplay.ToString());
+        SceneManager.LoadScene("map" + map.ToString());
     }
 
-    public void mapNext(int currentMap)
+    public void mapNext()
     {
         if (unLock)
         {
-            currentMap++;
-            SceneManager.LoadScene("map" + currentMap.ToString());
+            map++;
+            SceneManager.LoadScene("map" + map.ToString());
         }
         else
         {
@@ -44,7 +44,7 @@ public class MapLoader:MonoBehaviour
         unLock = false;
     }
 
-    public void buttonUnlock(int map)
+    public void buttonUnlock()
     {
         if (SciptsHomeScreen.scoreTotalCrown - mapCost >= 0)
         {

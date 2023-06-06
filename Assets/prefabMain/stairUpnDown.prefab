@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4218556478728155704}
   - component: {fileID: 4218556478728155710}
   - component: {fileID: 4218556478728155709}
-  - component: {fileID: 473600548}
   m_Layer: 0
   m_Name: stairUpnDown
   m_TagString: stairUpnDown
@@ -99,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bb09cf66524d64e92aaacb1f353965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0
-  speed: 0
+  range: 2
+  speed: 0.02
 --- !u!61 &4218556478728155709
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,17 +126,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.6}
   m_EdgeRadius: 0
---- !u!114 &473600548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4218556478728155705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3427478b075405041b25dfc18ee82b3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 2
-  speed: 0.005

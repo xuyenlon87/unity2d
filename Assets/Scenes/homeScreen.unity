@@ -441,7 +441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapCost: 1
   unLock: 0
-  map: 0
+  map: 3
 --- !u!114 &440121350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
       - m_Target: {fileID: 440121349}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: OnMapClick
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -639,7 +639,7 @@ MonoBehaviour:
       - m_Target: {fileID: 441225654}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: buttonUnlock
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapCost: 1
   unLock: 0
-  map: 0
+  map: 2
 --- !u!114 &723259734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,7 +1289,7 @@ MonoBehaviour:
       - m_Target: {fileID: 723259733}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: OnMapClick
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2239,7 +2239,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1165859929}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: buttonUnlock
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3168,7 +3168,7 @@ MonoBehaviour:
       - m_Target: {fileID: 2014286829}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: OnMapClick
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3228,8 +3228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 1
-  unLock: 0
-  map: 0
+  unLock: 1
+  map: 1
 --- !u!1 &2066488358
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,7 +3448,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1062043606}
   m_HandleRect: {fileID: 1062043605}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
