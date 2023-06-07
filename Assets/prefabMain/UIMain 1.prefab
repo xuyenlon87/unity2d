@@ -650,6 +650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
+  unLock: 0
+  map: 0
 --- !u!1 &7797739907068695911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 252076b828035914694546aaf968a56e, type: 3}
+  m_Sprite: {fileID: -1478937875, guid: b726829b45c87de40912597bbb78955c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1782,6 +1784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
+  unLock: 0
+  map: 0
 --- !u!1001 &6986621889277213787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2179,6 +2183,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6258047187591320383, guid: 3f837f92363aa2d449046f811b2e24ec, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1666781129, guid: b726829b45c87de40912597bbb78955c, type: 3}
     - target: {fileID: 6258047187785205041, guid: 3f837f92363aa2d449046f811b2e24ec, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2289,6 +2297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
+  unLock: 0
+  map: 0
 --- !u!1 &4246384152392950251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6258047187591320376, guid: 3f837f92363aa2d449046f811b2e24ec, type: 3}
@@ -2307,3 +2317,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
+  unLock: 0
+  map: 0

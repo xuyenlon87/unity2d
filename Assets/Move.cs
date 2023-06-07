@@ -92,7 +92,16 @@ public class Move : MonoBehaviour
             playerManager.gameOver = true;
             gameObject.SetActive(false);
             AudioManager.instance.Play("GameOver");
-        }          
+        }
+        else if (collision.gameObject.CompareTag("wall"))
+        {
+            dkJump = false;
+            moveDown = false;
+            moveLeft = false;
+            moveRight = false;
+            moveUp = false;
+        }
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -105,7 +114,11 @@ public class Move : MonoBehaviour
         {
             transform.parent = null;
         }
-        
+        else if (collision.gameObject.CompareTag("wall"))
+        {
+            dkJump = true;
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -191,6 +204,18 @@ public class Move : MonoBehaviour
                 SetActiveMovingAnimation(true);
                 SetActiveUpAndDownAnimation(false);
                 SetAcivePushAnimation(false);
+                if (jump)
+                {
+                    if (dkJump)
+                    {
+                        dkJump = false;
+                        rb.velocity = new Vector2(rb.velocity.x, speed + 1);
+                        SetActiveJumpAnimation(true);
+                        SetAcivePushAnimation(false);
+                        SetActiveMovingAnimation(false);
+
+                    }
+                }
             }
 
         }
@@ -214,6 +239,18 @@ public class Move : MonoBehaviour
                 SetActiveMovingAnimation(true);
                 SetActiveIdleAnimation(false);
                 SetAcivePushAnimation(false);
+                if (jump)
+                {
+                    if (dkJump)
+                    {
+                        dkJump = false;
+                        rb.velocity = new Vector2(rb.velocity.x, speed + 1);
+                        SetActiveJumpAnimation(true);
+                        SetAcivePushAnimation(false);
+                        SetActiveMovingAnimation(false);
+
+                    }
+                }
 
             }
         }
@@ -223,10 +260,11 @@ public class Move : MonoBehaviour
             if (dkJump)
             {
                     dkJump = false;
-                    rb.velocity = new Vector2(rb.velocity.x, speed + 2);
+                    rb.velocity = new Vector2(rb.velocity.x, speed + 1);
                     SetActiveJumpAnimation(true);
-                    SetAcivePushAnimation(false);
+                    SetAcivePushAnimation(false);               
             }
+            
         }
             else if (upAndDown)
             {

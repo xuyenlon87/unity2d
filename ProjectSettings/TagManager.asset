@@ -14,6 +14,7 @@ TagManager:
   - stairUpnDown
   - trap
   - flag
+  - wall
   layers:
   - Default
   - TransparentFX
