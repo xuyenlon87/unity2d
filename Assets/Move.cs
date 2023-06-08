@@ -17,6 +17,7 @@ public class Move : MonoBehaviour
     public bool dkPush;
     public float speed = 3;
     private float lowY;
+    public float jumpHeight = 4.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -77,6 +78,7 @@ public class Move : MonoBehaviour
         {
             dkPush = true;
             dkJump = true;
+            SetActiveJumpAnimation(false);
         }
         else if (collision.gameObject.CompareTag("stair"))
         {
@@ -197,6 +199,18 @@ public class Move : MonoBehaviour
                 SetActiveIdleAnimation(false);
                 SetActiveUpAndDownAnimation(false);
             }
+            else if (jump)
+            {
+                if (dkJump)
+                {
+                    dkJump = false;
+                    rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+                    SetActiveJumpAnimation(true);
+                    SetAcivePushAnimation(false);
+                    SetActiveMovingAnimation(false);
+
+                }
+            }
             else
             {
                 rb.velocity = new Vector2(-speed, rb.velocity.y);
@@ -204,18 +218,18 @@ public class Move : MonoBehaviour
                 SetActiveMovingAnimation(true);
                 SetActiveUpAndDownAnimation(false);
                 SetAcivePushAnimation(false);
-                if (jump)
-                {
-                    if (dkJump)
-                    {
-                        dkJump = false;
-                        rb.velocity = new Vector2(rb.velocity.x, speed + 1);
-                        SetActiveJumpAnimation(true);
-                        SetAcivePushAnimation(false);
-                        SetActiveMovingAnimation(false);
+                //if (jump)
+                //{
+                //    if (dkJump)
+                //    {
+                //        dkJump = false;
+                //        rb.velocity = new Vector2(rb.velocity.x, speed + 1);
+                //        SetActiveJumpAnimation(true);
+                //        SetAcivePushAnimation(false);
+                //        SetActiveMovingAnimation(false);
 
-                    }
-                }
+                //    }
+                //}
             }
 
         }
@@ -232,6 +246,19 @@ public class Move : MonoBehaviour
                 SetAcivePushAnimation(true);
                 SetActiveMovingAnimation(false);
                 SetActiveIdleAnimation(false);
+                SetActiveJumpAnimation(false);
+            }
+            else if (jump)
+            {
+                if (dkJump)
+                {
+                    dkJump = false;
+                    rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+                    SetActiveJumpAnimation(true);
+                    SetAcivePushAnimation(false);
+                    SetActiveMovingAnimation(false);
+
+                }
             }
             else
             {
@@ -239,18 +266,19 @@ public class Move : MonoBehaviour
                 SetActiveMovingAnimation(true);
                 SetActiveIdleAnimation(false);
                 SetAcivePushAnimation(false);
-                if (jump)
-                {
-                    if (dkJump)
-                    {
-                        dkJump = false;
-                        rb.velocity = new Vector2(rb.velocity.x, speed + 1);
-                        SetActiveJumpAnimation(true);
-                        SetAcivePushAnimation(false);
-                        SetActiveMovingAnimation(false);
+                SetActiveJumpAnimation(false);
+                //if (jump)
+                //{
+                //    if (dkJump)
+                //    {
+                //        dkJump = false;
+                //        rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+                //        SetActiveJumpAnimation(true);
+                //        SetAcivePushAnimation(false);
+                //        SetActiveMovingAnimation(false);
 
-                    }
-                }
+                //    }
+                //}
 
             }
         }
@@ -259,39 +287,43 @@ public class Move : MonoBehaviour
         {
             if (dkJump)
             {
-                    dkJump = false;
-                    rb.velocity = new Vector2(rb.velocity.x, speed + 1);
-                    SetActiveJumpAnimation(true);
-                    SetAcivePushAnimation(false);               
+                dkJump = false;
+                rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+                SetActiveJumpAnimation(true);
+                SetAcivePushAnimation(false);
+                SetActiveMovingAnimation(false);
             }
-            
+
         }
             else if (upAndDown)
             {
                 if (moveDown)
                 {
-                    rb.velocity = new Vector2(rb.velocity.x, (speed - 1)*-1);
+                    rb.velocity = new Vector2(rb.velocity.x, (speed - 1) * -1);
                     SetActiveUpAndDownAnimation(true);
-                SetActiveIdleAnimation(false);
-                SetActiveMovingAnimation(false);
+                    SetActiveIdleAnimation(false);
+                    SetActiveMovingAnimation(false);
+                    SetActiveJumpAnimation(false);
                 }
                 else if (moveUp)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, speed - 1);
                     SetActiveUpAndDownAnimation(true);
-                SetActiveIdleAnimation(false);
-                SetActiveMovingAnimation(false);
+                    SetActiveIdleAnimation(false);
+                    SetActiveMovingAnimation(false);
+                    SetActiveJumpAnimation(false);
                 }
                 else
                 {
-                rb.velocity = new Vector2(0, 0);
-                SetActiveIdleAnimation(true);
-                SetActiveUpAndDownAnimation(false);
+                    rb.velocity = new Vector2(0, 0);
+                    SetActiveIdleAnimation(true);
+                    SetActiveUpAndDownAnimation(false);
+                    SetActiveJumpAnimation(false);
+                }
             }
-        }
 
 
-        else
+            else
             {
                 rb.velocity = new Vector2(0, rb.velocity.y);
                 SetActiveIdleAnimation(true);
@@ -299,10 +331,11 @@ public class Move : MonoBehaviour
                 SetActiveJumpAnimation(false);
                 SetAcivePushAnimation(false);
                 dkPush = false;
-            
+
                 SetActiveUpAndDownAnimation(false);
-                
-        }
+
+            }
+
         }
 
 

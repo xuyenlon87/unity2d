@@ -147,6 +147,7 @@ MonoBehaviour:
   dkJump: 0
   dkPush: 0
   speed: 3
+  jumpHeight: 5
 --- !u!58 &5829097225122107022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -160,9 +161,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: -0.24}
+  m_Offset: {x: 0.009302869, y: -0.35}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6093029
 --- !u!114 &5829097225122107021
 MonoBehaviour:
   m_ObjectHideFlags: 0

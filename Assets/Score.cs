@@ -55,13 +55,13 @@ public class Score : MonoBehaviour
 
     }
     
-    private void setScoreStar()
+    public static void setScoreStar()
     {
         PlayerPrefs.SetInt("scoreStarSave", scoreTotal);
         PlayerPrefs.Save();
     }
 
-    private void setScoreCrown()
+    public static void setScoreCrown()
     {
         PlayerPrefs.SetInt("scoreCrownSave", scoreTotalCrown);
         PlayerPrefs.Save();

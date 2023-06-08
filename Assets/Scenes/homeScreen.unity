@@ -440,7 +440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 1
-  unLock: 0
   map: 3
 --- !u!114 &440121350
 MonoBehaviour:
@@ -489,7 +488,7 @@ MonoBehaviour:
       - m_Target: {fileID: 440121349}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: OnMapClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -589,8 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5381313d91cf54542ba77d3be9420267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapCost: 0
-  unLock: 0
+  mapCost: 1
   map: 2
 --- !u!114 &441225655
 MonoBehaviour:
@@ -639,7 +637,7 @@ MonoBehaviour:
       - m_Target: {fileID: 441225654}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: buttonUnlock
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1240,7 +1238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 1
-  unLock: 0
   map: 2
 --- !u!114 &723259734
 MonoBehaviour:
@@ -1289,11 +1286,11 @@ MonoBehaviour:
       - m_Target: {fileID: 723259733}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: OnMapClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1425,7 +1422,7 @@ GameObject:
   - component: {fileID: 756908837}
   - component: {fileID: 756908836}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Scroll View Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2190,7 +2187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 1
-  unLock: 0
   map: 3
 --- !u!114 &1165859930
 MonoBehaviour:
@@ -2239,7 +2235,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1165859929}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: buttonUnlock
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2730,7 +2726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2927,7 +2923,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51cc2203d82d4fd4e87518db77b6aeea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreTotal: 0
   ScoreSave: {fileID: 0}
+  scoreTotalCrown: 0
   TextScore: {fileID: 483074879}
   TextScoreCrown: {fileID: 1751296735}
 --- !u!4 &1907887762
@@ -3168,7 +3166,7 @@ MonoBehaviour:
       - m_Target: {fileID: 2014286829}
         m_TargetAssemblyTypeName: MapLoader, Assembly-CSharp
         m_MethodName: OnMapClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3228,7 +3226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 1
-  unLock: 1
   map: 1
 --- !u!1 &2066488358
 GameObject:
@@ -3448,7 +3445,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1062043606}
   m_HandleRect: {fileID: 1062043605}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

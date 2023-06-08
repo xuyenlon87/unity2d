@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class SciptsHomeScreen : MonoBehaviour
 {
-    public static  int scoreTotal;
+    public int scoreTotal;
     public Score ScoreSave;
-    public static int scoreTotalCrown;
+    public int scoreTotalCrown;
     public Text TextScore;
     public Text TextScoreCrown;
     // Start is called before the first frame update

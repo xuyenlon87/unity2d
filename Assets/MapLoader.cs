@@ -4,34 +4,32 @@ using UnityEngine.SceneManagement;
 public class MapLoader:MonoBehaviour
 {
     public int mapCost;
-    public bool unLock;
     public int map;
 
     private void Awake()
     {
-            if (PlayerPrefs.GetInt("Map Unlocked") == 1)
+            if (PlayerPrefs.GetInt("MapUnlocked" + map) == 1)
             {
-                unLock = true; // Cập nhật trạng thái đã mở khóa của map tương ứng
-                GameObject.Find("ButtonUnlock" + map).SetActive(false);
+            GameObject.Find("ButtonUnlock" + map).SetActive(false);
             }
     }
-    public void OnMapClick()
+    public void OnMapClick(int map)
     {
         SceneManager.LoadScene($"Map{map}");
 
     }
 
-    public void ReplayMap()
+    public void ReplayMap(int currentMap)
     {
-        SceneManager.LoadScene("map" + map.ToString());
+        SceneManager.LoadScene("map" + currentMap.ToString());
     }
 
-    public void mapNext()
+    public void mapNext(int currentMap)
     {
-        if (unLock)
+        if (PlayerPrefs.GetInt("MapUnlocked" + map) == 1)
         {
-            map++;
-            SceneManager.LoadScene("map" + map.ToString());
+            currentMap++;
+            SceneManager.LoadScene("map" + currentMap.ToString());
         }
         else
         {
@@ -41,16 +39,17 @@ public class MapLoader:MonoBehaviour
     }
     private void Start()
     {
-        unLock = false;
+        //unLock = false;
     }
 
-    public void buttonUnlock()
+    public void buttonUnlock(int map)
     {
-        if (SciptsHomeScreen.scoreTotalCrown - mapCost >= 0)
+        if (Score.scoreTotalCrown - mapCost >= 0)
         {
+            Score.scoreTotalCrown -= mapCost;
+            Score.setScoreCrown();
             GameObject.Find("ButtonUnlock" + map).SetActive(false);
-            unLock = true;
-            PlayerPrefs.SetInt("Map Unlocked", 1); // Lưu trạng thái đã mở khóa của map
+            PlayerPrefs.SetInt("MapUnlocked" + map, 1); // Lưu trạng thái đã mở khóa của map
             PlayerPrefs.Save();
         }
     }

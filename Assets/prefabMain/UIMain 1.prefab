@@ -650,7 +650,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
-  unLock: 0
   map: 0
 --- !u!1 &7797739907068695911
 GameObject:
@@ -1784,7 +1783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
-  unLock: 0
   map: 0
 --- !u!1001 &6986621889277213787
 PrefabInstance:
@@ -2011,6 +2009,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b724ebf487bae6d4caa7339828f7030f, type: 3}
+--- !u!1 &7797739907477882809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919390417924750306, guid: b724ebf487bae6d4caa7339828f7030f, type: 3}
+  m_PrefabInstance: {fileID: 6986621889277213787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8765292876418663971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797739907477882809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
 --- !u!224 &7797739907857079592 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 919390417699692915, guid: b724ebf487bae6d4caa7339828f7030f, type: 3}
@@ -2297,7 +2315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
-  unLock: 0
   map: 0
 --- !u!1 &4246384152392950251 stripped
 GameObject:
@@ -2317,5 +2334,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCost: 0
-  unLock: 0
   map: 0
