@@ -1576,9 +1576,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1401999028}
+    - target: {fileID: 4246384150779414579, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246384151239390780, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4246384151463605309, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246384152484018151, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246384152484018151, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246384152484018151, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7797739906767233295, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1671,6 +1691,18 @@ PrefabInstance:
     - target: {fileID: 7797739908084081596, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7797739908084081598, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7797739908084081598, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7797739908084081598, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7797739908177965257, guid: d7e5bdccbd8c199438ff7ed7117a0afd, type: 3}
       propertyPath: m_IsActive

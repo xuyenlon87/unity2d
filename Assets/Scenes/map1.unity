@@ -1751,10 +1751,6 @@ PrefabInstance:
       propertyPath: finishMapScreen
       value: 
       objectReference: {fileID: 363509272}
-    - target: {fileID: 5829097225122107023, guid: 7ab998e4d11230b4096dcd1676404996, type: 3}
-      propertyPath: jumpHeight
-      value: 4.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5829097225122107025, guid: 7ab998e4d11230b4096dcd1676404996, type: 3}
       propertyPath: m_RootOrder
       value: 3
