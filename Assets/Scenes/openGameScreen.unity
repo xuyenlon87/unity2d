@@ -2682,7 +2682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.DefaultCompany.unityt2d.Gift5
+  productId: com.defaultcompany.unityt2d.gift5
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -2856,7 +2856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.DefaultCompany.unityt2d.Gift6
+  productId: com.defaultcompany.unityt2d.gift6
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -3030,7 +3030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.DefaultCompany.unityt2d.Gift4
+  productId: com.defaultcompany.unityt2d.gift4
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -4700,7 +4700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.DefaultCompany.unityt2d.Gift3
+  productId: com.defaultcompany.unityt2d.gift3
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -4954,7 +4954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.DefaultCompany.unityt2d.Gift1
+  productId: com.defaultcompany.unityt2d.gift1
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -5204,7 +5204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.DefaultCompany.unityt2d.Gift2
+  productId: com.defaultcompany.unityt2d.gift2
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -6295,7 +6295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5359994204036403406, guid: 7fe6d8556d33e374f8f14fd90e43e44c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5359994204383994172, guid: 7fe6d8556d33e374f8f14fd90e43e44c, type: 3}
       propertyPath: m_IsActive
