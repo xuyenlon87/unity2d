@@ -7,9 +7,19 @@ public class buttonScripts : MonoBehaviour
 
 {
     public GameObject AdsScreen;
+    public GameObject settingScreen;
     public void OnOpenGameScreen()
     {
         SceneManager.LoadScene("openGameScreen");
+    }
+
+    public void OnSettingScreen()
+    {
+        settingScreen.SetActive(true);
+    }
+    public void OffSettingScreen()
+    {
+        settingScreen.SetActive(false);
     }
     public void OnAdsScreen()
     {
