@@ -973,6 +973,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99f6e004d7d4417498e509e95ec84045, type: 3}
+--- !u!1 &722860561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6854466306982772178, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
+  m_PrefabInstance: {fileID: 6854466307021882386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &722860565
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722860561}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d69c5eb9d2061e4196ac53289d31162, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &728384260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2467,6 +2493,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2092965473}
+    - target: {fileID: 6854466306982772177, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2546682, guid: b726829b45c87de40912597bbb78955c, type: 3}
     - target: {fileID: 6854466306982772178, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
       propertyPath: m_Name
       value: ButtonPlay
@@ -2505,11 +2535,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6854466306982772179, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6854466306982772179, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854466306982772179, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854466306982772179, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6854466306982772179, guid: 2a22ca6a5594c7f4698c1f92c0efeb55, type: 3}
       propertyPath: m_LocalPosition.x
